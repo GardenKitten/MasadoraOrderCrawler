@@ -8,11 +8,8 @@ python爬虫爬取魔法集市全部代购订单
 
 - 作者代码水平很菜，有bug请在Issues里提，非常感谢！
 
-## 下载
-请在[Release](https://github.com/GardenKitten/MasadoraOrderCrawler/releases/tag/ver1.0)中下载
-
 ## 使用方法：
-- 下载压缩包并解压
+- 下载[MasadoraOrdersCrawler.zip](https://github.com/GardenKitten/MasadoraOrderCrawler/releases/download/ver1.0/MasadoraOrdersCrawler.zip)压缩包并解压
 - 打开玛莎订单页：https://www.masadora.jp/member/order
 - 在该页面按Ctrl+Shift+I调出开发者工具，打开Network一栏
 - 刷新玛莎订单页，在开发者工具中查看名为order的request
