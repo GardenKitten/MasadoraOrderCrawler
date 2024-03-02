@@ -12,7 +12,7 @@ cookies:
   _language: "zh_CN"
   __td_signed: "true"
 
-  #改成你自己的
+  #根据你自己的cookie填写
   __afmk: ""
 
 # 生成的excel文件路径
