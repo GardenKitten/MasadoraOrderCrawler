@@ -11,19 +11,8 @@ headers:
 cookies:
   _language: "zh_CN"
   __td_signed: "true"
-  _kfcq: "1"
-  _ktbn: "1"
-  _kibv: "1"
-  _kgnm: "1"
-  _kphj: "1"
-  _kdhm: "1"
-  _kgzm: "1"
 
-  #以下改成你自己的
-  __snaker__id: ""
-  _dasm: ""
-  JSESSIONID: ""
-  gdxidpyhxdE: ""
+  #改成你自己的
   __afmk: ""
 
 # 生成的excel文件路径
