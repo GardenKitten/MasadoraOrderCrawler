@@ -15,6 +15,6 @@ python爬虫爬取魔法集市全部代购订单
 - 刷新玛莎订单页，在开发者工具中查看名为order的request
 - 查看order的header中的Request Headers，找到里面的Cookie
 - 打开压缩包中的config.yaml
-- 将刚刚的Cookie数据配置到yaml文件中并保存
+- 将Cookie中的__afmk一项配置到yaml文件中并保存
 - 运行MasadoraOrderCrawler.exe，等待程序运行完毕
 - 如果弹出“Excel 文件生成成功！“的提示，则能在根目录中看到生成的订单excel文件
