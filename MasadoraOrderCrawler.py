@@ -30,8 +30,8 @@ except yaml.YAMLError as e:
 wb = Workbook()
 ws = wb.active
 ws.append(
-    ["订单号", "支付状态", "物流状态", "下单时间", "产品名称", "原价（日元）", "含手续费的订单金额（日元）", "来源网站",
-     "产品链接"])
+    ["订单号", "支付状态", "物流状态", "下单时间", "商品名称", "原价", "手续费", "订单总金额", "重量", "来源网站",
+     "商品链接"])
 # 如果路径不存在，则创建目录
 os.makedirs(os.path.dirname(path), exist_ok=True)
 
@@ -59,8 +59,11 @@ try:
                     order_info['logisticsStatus']['text'],
                     order_time.strftime('%Y-%m-%d %H:%M:%S'),
                     product_info['name'],
-                    product_info['price'],
-                    order_info['domesticPriceModel']['totalPrice'],
+                    str(product_info['price']) + "円（" +
+                    str(order_info['domesticPriceModel']['productPrice']['chinaPrice']) + "元）",
+                    str(product_info['handlingFee']) + "円",
+                    str(order_info['domesticPriceModel']['totalPrice']) + "円",
+                    str(product_info['weight']) + "克",
                     order_info['sourceSite']['siteName'],
                     product_info['url']
                 ])
